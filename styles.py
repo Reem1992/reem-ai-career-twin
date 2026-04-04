@@ -315,46 +315,10 @@ div[data-testid="stHorizontalBlock"] > div:nth-child(3) button[kind="secondary"]
     height: 42px !important;
 }
 
-/* Send button hover */
-[data-testid="stChatInput"] button:hover {
-    background: #C99700 !important;
-    color: #1F1F1F !important;
-}
-
-/* Remove odd gray default areas */
-[data-testid="stChatInputContainer"] {
-    background: transparent !important;
-    border-top: none !important;
-}
-
-/* Force text color everywhere */
-html, body, [class*="css"]  {
+svg {
     color: #1a1a1a !important;
+    fill: #1a1a1a !important;
 }
-
-/* Fix chat messages */
-.stChatMessage {
-    color: #1a1a1a !important;
-}
-
-/* Fix input box */
-input, textarea {
-    color: #1a1a1a !important;
-}
-
-/* Fix buttons */
-button {
-    color: #1a1a1a !important;
-}
-
-/* Prevent dark mode override */
-@media (prefers-color-scheme: dark) {
-    html, body {
-        background-color: #ffffff !important;
-        color: #1a1a1a !important;
-    }
-}
-
 
 </style>
     """
