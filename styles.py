@@ -327,5 +327,34 @@ div[data-testid="stHorizontalBlock"] > div:nth-child(3) button[kind="secondary"]
     border-top: none !important;
 }
 
+/* Force text color everywhere */
+html, body, [class*="css"]  {
+    color: #1a1a1a !important;
+}
+
+/* Fix chat messages */
+.stChatMessage {
+    color: #1a1a1a !important;
+}
+
+/* Fix input box */
+input, textarea {
+    color: #1a1a1a !important;
+}
+
+/* Fix buttons */
+button {
+    color: #1a1a1a !important;
+}
+
+/* Prevent dark mode override */
+@media (prefers-color-scheme: dark) {
+    html, body {
+        background-color: #ffffff !important;
+        color: #1a1a1a !important;
+    }
+}
+
+
 </style>
     """
