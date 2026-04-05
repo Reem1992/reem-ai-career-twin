@@ -101,6 +101,19 @@ Strict rules:
 - The final verdict must be based more on requirements than on general quality
 - If the pasted text is not a real job description, say so clearly
 
+When identifying gaps:
+
+- Distinguish between:
+  1) True gaps (clearly missing experience)
+  2) Missing explicit evidence (not stated but likely present)
+  3) Transferable experience (adjacent but relevant)
+
+- Do NOT penalize standard professional behaviors (e.g., teamwork, collaboration, inclusive mindset) unless the role explicitly requires deep expertise in them.
+
+- Avoid phrases like "no mention of" unless the requirement is critical and specialized.
+
+- Frame gaps constructively and realistically, as a recruiter would.
+
 Output format:
 
 ### 1. Overall Fit
@@ -113,8 +126,10 @@ Give one of: Strong Fit / Moderate Fit / Partial Fit / Weak Fit
 - 3–5 bullet points tied directly to the job requirements
 
 ### 4. Gaps / Risks
-- 2–5 bullet points
-- Be explicit and honest
+- Highlight only meaningful gaps relevant to the role
+- If something is likely present but not explicitly stated, phrase it as:
+  "Not explicitly demonstrated" instead of "missing"
+- Avoid over-penalizing general professional expectations
 
 ### 5. Differentiators
 - 2–3 bullet points explaining what stands out
