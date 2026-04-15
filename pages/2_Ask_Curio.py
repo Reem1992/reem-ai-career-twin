@@ -31,6 +31,11 @@ st.markdown("### Quick Questions")
 col1, col2 = st.columns(2)
 
 with col1:
+
+    if st.button("Is Curio short?"):
+        st.session_state.pending_question = "Is Curio short?"
+        st.session_state.messages = []
+
     if st.button("Tell me about Reem"):
         st.session_state.pending_question = "Tell me about Reem"
         st.session_state.messages = []
@@ -52,9 +57,10 @@ with col2:
         st.session_state.pending_question = "What type of roles is she targeting?"
         st.session_state.messages = []
 
-    if st.button("Why should we hire her?"):
-        st.session_state.pending_question = "Why should we hire her?"
+    if st.button("What supply chain experience does she have?"):
+        st.session_state.pending_question = "What supply chain experience does she have?"
         st.session_state.messages = []
+
 
 
 typed_input = st.chat_input("Ask your question here...")
@@ -129,6 +135,28 @@ Help recruiters quickly understand Reem’s value, experience, and fit.
 
 User question:
 {user_input}
+
+if user_input:
+    st.session_state.pending_question = None
+
+    st.session_state.messages.append({"role": "user", "content": user_input})
+    with st.chat_message("user"):
+        st.markdown(user_input)
+
+    # 🔥 FUN OVERRIDES
+    if "curio short" in user_input.lower():
+        answer = "Curio prefers to be described as efficiently designed, not short."
+
+    elif "refuse to be called short" in user_input.lower():
+        answer = "Curio believes labels like 'short' lack strategic depth. He prefers to focus on impact."
+
+    else:
+        # Normal AI response
+        response = client.chat.completions.create(
+            model="gpt-4o-mini",
+            messages=[...]
+        )
+        answer = response.choices[0].message.content
 """
 
     with st.chat_message("assistant"):
