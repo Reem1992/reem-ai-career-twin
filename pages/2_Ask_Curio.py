@@ -44,9 +44,6 @@ with col1:
         st.session_state.pending_question = "What are her strongest achievements?"
         st.session_state.messages = []
 
-    if st.button("What supply chain experience does she have?"):
-        st.session_state.pending_question = "What supply chain experience does she have?"
-        st.session_state.messages = []
 
 with col2:
     if st.button("How does she use data in her work?"):
