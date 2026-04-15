@@ -74,7 +74,7 @@ if user_input:
     lowered = user_input.lower().strip()
 
     if lowered == "is curio short?":
-        answer = "Curio prefers to be described as efficiently designed, not short."
+        answer = "Curio prefers 'compact and high-performance.' Short is just... poor positioning."
 
     elif lowered == "why does curio refuse to be called short?":
         answer = "Curio believes labels like 'short' lack strategic depth. He prefers to focus on impact."
